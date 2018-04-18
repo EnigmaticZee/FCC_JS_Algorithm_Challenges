@@ -1,5 +1,5 @@
+//Method 1
 //Using Recursion
-
 function factorialize(num) {
   if (num === 0){ return 1;}
   return num * factorialize(num - 1);
@@ -7,13 +7,14 @@ function factorialize(num) {
 
 factorialize(5);
 
+//Method 2
 //Using For
-
-
 function factorialize(num) {
-  var result = 1;
-for (var i = 1; i <= num; i++)
-result *= i; return result; 
+    var result = 1;
+    for (var i = 1; i <= num; i++) {
+        result *= i;
+    }
+    return result;
 }
 
 factorialize(5);
